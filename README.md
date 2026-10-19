@@ -1,39 +1,99 @@
+Real-Time AI Object Detection System
 
-# Real-Time AI Object Detection System
+A real-time computer vision application that detects and identifies everyday objects through a webcam using **Python, OpenCV, and YOLO**.
 
-A real-time object detection project built using Python, OpenCV, and YOLO.
+## Overview
+
+This project uses a pretrained YOLO object detection model to identify objects in live video frames. Detected objects are displayed with bounding boxes and class labels, making the results easy to visualize.
+
+Built as a hands-on project to explore real-time object detection and practical AI integration.
 
 ## Features
-- Detects objects using a laptop webcam
-- Identifies objects with labels
-- Displays bounding boxes around detected objects
-- Runs in real time
 
-## Technologies Used
-- Python
-- OpenCV
-- Ultralytics YOLO
+- **Live Detection:** Detects objects directly from a webcam feed.
+- **Object Classification:** Displays labels for recognized objects.
+- **Bounding Boxes:** Highlights detected objects visually.
+- **Real-Time Visualization:** Displays annotated video frames using OpenCV.
+- **Simple Execution:** Runs locally with a single Python command.
 
-## Requirements
-- Python installed
-- Webcam
-- Internet connection for the initial AI model download
+## Tech Stack
 
-## Installation
+| Technology | Purpose |
+|---|---|
+| Python | Core programming language |
+| Ultralytics YOLO | Object detection model |
+| OpenCV | Webcam access and visual output |
+| Git & GitHub | Version control and project hosting |
 
-Install the required libraries:
+## Project Structure
 
-```bash
-pip install -r requirements.txt
+```text
+AI-Object-Detection/
+├── main.py
+├── requirements.txt
+├── README.md
+└── .gitignore
 ```
 
-## Run the Project
+## Getting Started
+
+### Prerequisites
+
+- Python installed
+- A working webcam
+- Internet access for the initial model download
+
+### 1. Clone the repository
+
+```bash
+git clone https://github.com/Shrutika1812/AI-Object-Detection.git
+cd AI-Object-Detection
+```
+
+### 2. Create and activate a virtual environment
+
+**Windows PowerShell:**
+
+```powershell
+python -m venv .venv
+.venv\Scripts\Activate.ps1
+```
+
+### 3. Install dependencies
+
+```bash
+python -m pip install -r requirements.txt
+```
+
+### 4. Run the application
 
 ```bash
 python main.py
 ```
 
-Press `q` to stop object detection.
+The webcam window will open and display detected objects with their labels and bounding boxes. Press **`q`** to exit.
 
-## Project Status
-Basic real-time object detection is implemented successfully.
+## How It Works
+
+1. Loads the pretrained YOLO model.
+2. Captures frames from the webcam using OpenCV.
+3. Processes each frame to detect objects.
+4. Draws bounding boxes and class labels around detected objects.
+5. Displays the annotated frames in a live window.
+
+## Future Improvements
+
+- Support image and video file input.
+- Display detection confidence scores.
+- Track objects across video frames.
+- Measure detection performance under different conditions.
+
+## Author
+
+**Shrutika Patil**
+
+[GitHub Profile](https://github.com/Shrutika1812)
+
+---
+
+*Built to gain practical experience with AI-powered computer vision and real-time object detection.*
